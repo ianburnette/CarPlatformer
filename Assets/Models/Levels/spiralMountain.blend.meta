@@ -1,0 +1,125 @@
+fileFormatVersion: 2
+guid: 602e41a64e6cd144898415b9e57fd037
+timeCreated: 1434471331
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: flowers
+    100004: geomettry
+    100006: grass
+    100008: lowerWater
+    100010: upperGrass
+    100012: upperWater
+    100014: waterfallBig
+    100016: waterfallSmall
+    400000: //RootNode
+    400002: flowers
+    400004: geomettry
+    400006: grass
+    400008: lowerWater
+    400010: upperGrass
+    400012: upperWater
+    400014: waterfallBig
+    400016: waterfallSmall
+    2300000: //RootNode
+    2300002: flowers
+    2300004: geomettry
+    2300006: grass
+    2300008: lowerWater
+    2300010: upperGrass
+    2300012: upperWater
+    2300014: waterfallBig
+    2300016: waterfallSmall
+    3300000: //RootNode
+    3300002: flowers
+    3300004: geomettry
+    3300006: grass
+    3300008: lowerWater
+    3300010: upperGrass
+    3300012: upperWater
+    3300014: waterfallBig
+    3300016: waterfallSmall
+    4300000: Mesh304_Mesh_406_1_skp13E1_Model
+    4300002: waterfallBig
+    4300004: waterfallSmall
+    4300006: upperWater
+    4300008: lowerWater
+    4300010: flowers
+    4300012: grass
+    4300014: upperGrass
+    4300016: geomettry
+    6400000: //RootNode
+    6400002: flowers
+    6400004: geomettry
+    6400006: grass
+    6400008: lowerWater
+    6400010: upperGrass
+    6400012: upperWater
+    6400014: waterfallBig
+    6400016: waterfallSmall
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 10
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -8,9 +8,25 @@ ModelImporter:
     100000: Cylinder
     100002: Cylinder_001
     100004: //RootNode
+    100006: Armature
+    100008: Bone
+    100010: Bone_001
+    100012: Bone_002
+    100014: Bone_003
+    100016: Bone_004
+    100018: Bone_005
+    100020: hood
     400000: Cylinder
     400002: Cylinder_001
     400004: //RootNode
+    400006: Armature
+    400008: Bone
+    400010: Bone_001
+    400012: Bone_002
+    400014: Bone_003
+    400016: Bone_004
+    400018: Bone_005
+    400020: hood
     2300000: Cylinder
     2300002: Cylinder_001
     3300000: Cylinder
@@ -19,6 +35,7 @@ ModelImporter:
     4300002: Cylinder
     7400000: Default Take
     9500000: //RootNode
+    13700000: Cylinder
   materials:
     importMaterials: 1
     materialName: 0
@@ -28,6 +45,10 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
