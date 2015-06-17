@@ -193,7 +193,7 @@ public class PlayerMove : MonoBehaviour
 			print ("falling");
 		} else if (!grounded && gliding) {
 			rb.AddForce (Vector3.down * glideGravity);
-			print (rb.velocity.y);
+//			print (rb.velocity.y);
 		//	if (rb.velocity.y < maxGlideVerticalSpeed){
 				rb.velocity = new Vector3 (rb.velocity.x, maxGlideVerticalSpeed, rb.velocity.z);
 			//}

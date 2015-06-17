@@ -4,7 +4,7 @@ using UnityStandardAssets.Characters.ThirdPerson;
 
 public class ModelControls : MonoBehaviour {
 
-	public Transform carModel;
+	public Transform carModel, placeholder;
 	ThirdPersonCharacter controlScript;
 	public float turnSpeed, rightSelfSpeed;
 	Rigidbody rb;
@@ -25,31 +25,53 @@ public class ModelControls : MonoBehaviour {
 	//	PreventTipping ();
 	}
 
+	void LateUpdate(){
+	//	carModel.rotation = Quaternion.Euler(carModel.rotation.eulerAngles.x, Mathf.LerpAngle(carModel.rotation.eulerAngles.y,transform.rotation.eulerAngles.y, turnSpeed), carModel.rotation.eulerAngles.z );
+		//carModel.rotation = Quaternion.Euler(carModel.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, carModel.rotation.eulerAngles.z );
+		Quaternion intendedRotation;
+		RaycastHit hit;
+		if (Physics.Raycast (transform.position, -Vector3.up, out hit, 2f, groundMask)) {
+			intendedRotation = Quaternion.FromToRotation (Vector3.up, hit.normal);
+			print ("aligning to " + hit.transform);
+		} else {
+			intendedRotation = Quaternion.identity;
+		}
+		carModel.rotation = Quaternion.Lerp (carModel.rotation, intendedRotation, turnSpeed * Time.deltaTime);
+
+	}
+
 	void SetPosition(){
 		//if (!controlScript.jumping) {
 		//	carModel.position = new Vector3 (transform.position.x, transform.position.y+ verticalOffset, transform.position.z);
 		//} else {
-			carModel.position = new Vector3 (transform.position.x, transform.position.y + verticalOffset, transform.position.z);
+			//carModel.position = new Vector3 (transform.position.x, transform.position.y + verticalOffset, transform.position.z);
+		carModel.position = new Vector3 (transform.position.x, transform.position.y + verticalOffset, transform.position.z);
+	//	carModel.position = placeholder.position;
 		//}
 	}
 
 	void SetRotation(){
-//		RaycastHit hit;
-//		if (Physics.Raycast (transform.position, -Vector3.up, out hit, 2f, groundMask)){
-//			carModel.rotation = Quaternion.FromToRotation(Vector3.right, hit.normal);
-//		}
+	//	carModel.rotation = Quaternion.Euler(carModel.rotation.eulerAngles.x, Mathf.LerpAngle(carModel.rotation.eulerAngles.y,transform.rotation.eulerAngles.y, turnSpeed), carModel.rotation.eulerAngles.z );
+	
+
+		//carModel.rotation = Quaternion.Lerp (carModel.rotation, intendedRotation, turnSpeed * Time.deltaTime);
+	
+
 
 //		Vector3 beforeRotation = carModel.rotation.eulerAngles;
 //		Vector3 newRotation = new Vector3 (carModel.rotation.eulerAngles.x, Mathf.Lerp (carModel.rotation.eulerAngles.y, transform.rotation.eulerAngles.y, turnSpeed * Time.deltaTime), carModel.rotation.eulerAngles.z);
 //		carModel.rotation = Quaternion.Euler (newRotation);//.eulerAngles = newRotation;
 
 
-		carModel.rotation = Quaternion.Lerp (carModel.rotation, transform.rotation, turnSpeed);
+		carModel.rotation = Quaternion.Lerp (carModel.rotation, transform.rotation, turnSpeed/3);
 
-//		carModel.eulerAngles = new Vector3 
-//						(carModel.rotation.eulerAngles.x, 
-//						 Mathf.Lerp (carModel.rotation.eulerAngles.y, transform.rotation.eulerAngles.y, turnSpeed * Time.deltaTime), 
-//						 carModel.rotation.eulerAngles.z);
+	//	print (carModel.eulerAngles);
+
+//		carModel.rotation = new Quaternion. (new Vector3 
+//						(carModel.eulerAngles.x, 
+//						// Mathf.Lerp (carModel.rotation.eulerAngles.y, transform.rotation.eulerAngles.y, turnSpeed * Time.deltaTime), 
+//			 			transform.rotation.eulerAngles.y,
+//						 carModel.eulerAngles.z));
 
 //		carModel.eulerAngles = new Vector3 
 //			(carModel.rotation.eulerAngles.x, 
